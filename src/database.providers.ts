@@ -1,4 +1,5 @@
 import { Sequelize } from 'sequelize-typescript';
+import { User } from './users/users.model';
 //import { Cat } from '../cats/cat.entity';
 
 export const databaseProviders = [
@@ -12,7 +13,7 @@ export const databaseProviders = [
         username: process.env.POSTGRES_USER,
         password: process.env.POSTGRES_PASSWORD,
         database: process.env.POSTGRES_DB,
-        models: [],
+        models: [User],
       });
       
    //   sequelize.addModels([Cat]);

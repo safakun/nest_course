@@ -33,8 +33,13 @@ nest generate service users
 Устанавливаем конфигурацию
 ```bash
 npm i @nestjs/config
+npm i cross-env
 ```
 
+Запустить базу данных
+```bash
+docker compose up
+```
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
