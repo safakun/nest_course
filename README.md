@@ -47,6 +47,14 @@ npm i @nestjs/swagger swagger-ui-express
 ```
 
 
+добавляем роли
+```bash
+nest generate module roles
+nest generate controller roles
+nest generate service roles
+
+```
+
 
 
 <p align="center">
