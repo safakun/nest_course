@@ -41,6 +41,14 @@ npm i cross-env
 docker compose up
 ```
 
+### Установка Swagger 
+```bash
+npm i @nestjs/swagger swagger-ui-express
+```
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
