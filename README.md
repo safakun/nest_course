@@ -1,3 +1,41 @@
+### NestJs course 
+
+Контроллеры должны быть тонкими - только принимать и возвращать
+Вся логика реализуется в сервисах 
+
+### Доки для работы с БД
+https://docs.nestjs.com/techniques/database 
+
+Sequelize integration
+https://docs.nestjs.com/recipes/sql-sequelize 
+
+```bash
+npm install --save sequelize sequelize-typescript 
+npm install --save-dev @types/sequelize
+```
+
+Sequelize docs
+https://sequelize.org/docs/v6/getting-started/ 
+
+install dependecy for sequelize 
+```bash
+npm install --save pg pg-hstore # Postgres
+```
+
+
+```bash
+mkdir users
+nest generate module users
+nest generate controller users
+nest generate service users
+```
+
+Устанавливаем конфигурацию
+```bash
+npm i @nestjs/config
+```
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
