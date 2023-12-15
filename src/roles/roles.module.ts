@@ -4,10 +4,12 @@ import { RolesController } from './roles.controller';
 import { User } from 'src/users/users.model';
 import { UserRoles } from './user-roles.model';
 import { Role } from './roles.model';
+import { rolesProviders } from './roles.providers';
 
 @Module({
-  providers: [RolesService],
+  providers: [RolesService, 
+  ...rolesProviders],
   controllers: [RolesController],
-  imports: [User, UserRoles, Role]
+  imports: [User, UserRoles]
 })
 export class RolesModule {}
