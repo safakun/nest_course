@@ -66,6 +66,14 @@ nest generate service auth
 
 npm i @nestjs/jwt bcryptjs
 ```
+Для устранения кольцевой зависимости в auth.module используем
+```javascript
+ forwardRef(() => UsersModule),
+```
+в users.module 
+```javascript
+ forwardRef(() => AuthModule),
+```
 
 
 <p align="center">
