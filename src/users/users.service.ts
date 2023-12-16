@@ -1,11 +1,12 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { User } from './users.model';
 import { CreateUserDto } from './dto/create-user.dto';
+import { RolesService } from 'src/roles/roles.service';
 
 @Injectable()
 export class UsersService {
 
-    constructor(@Inject('USERS_REPOSITIRY') private userRepository: typeof User) {
+    constructor(@Inject('USERS_REPOSITIRY') private userRepository: typeof User, private roleService: RolesService) {
 
     }
 
