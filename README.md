@@ -98,6 +98,9 @@ nest generate service files
 
 npm i uuid
 
+npm install --save @nestjs/serve-static
+
+
 ```
 
 
