@@ -2,6 +2,7 @@ import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app.module";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { JwtAuthGuard } from "./auth/jwt-auth.guard";
+import { ValidationPipe } from "./pipes/validation.pipe";
 
 
 async function start() {
@@ -20,6 +21,9 @@ async function start() {
 
   // to make all endpoints be guarded
   // app.useGlobalGuards(JwtAuthGuard)
+
+  // to make all pipes work globally
+  app.useGlobalPipes(new ValidationPipe())
 
   await app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
 }
