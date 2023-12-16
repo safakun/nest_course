@@ -1,7 +1,7 @@
 ### NestJs course 
 https://www.youtube.com/watch?v=dDeWWQWMM-Y 
 
-1h 1 min
+1h 13 min
 
 Контроллеры должны быть тонкими - только принимать и возвращать
 Вся логика реализуется в сервисах 
@@ -74,6 +74,15 @@ npm i @nestjs/jwt bcryptjs
 ```javascript
  forwardRef(() => AuthModule),
 ```
+
+### Валидация входныъ данных
+Pipes = строку перевести в число. валидация входных данных
+
+установка пакетов для валидации
+```bash
+npm i class-validator class-transformer
+``` 
+
 
 
 <p align="center">
