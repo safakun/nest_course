@@ -1,7 +1,7 @@
 ### NestJs course 
 https://www.youtube.com/watch?v=dDeWWQWMM-Y 
 
-1h 13 min
+1h 26 min
 
 Контроллеры должны быть тонкими - только принимать и возвращать
 Вся логика реализуется в сервисах 
@@ -91,6 +91,14 @@ nest generate service posts
 
 ```
 
+Работа с файлами
+```bash
+nest generate module files
+nest generate service files
+
+npm i uuid
+
+```
 
 
 <p align="center">
