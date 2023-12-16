@@ -1,7 +1,7 @@
 ### NestJs course 
 https://www.youtube.com/watch?v=dDeWWQWMM-Y 
 
-59 mins
+1h 1 min
 
 Контроллеры должны быть тонкими - только принимать и возвращать
 Вся логика реализуется в сервисах 
