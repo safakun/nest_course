@@ -58,6 +58,14 @@ nest generate service roles
 
 ```
 
+добавляем авторизацию
+```bash
+nest generate module auth
+nest generate controller auth
+nest generate service auth
+
+npm i @nestjs/jwt bcryptjs
+```
 
 
 <p align="center">
