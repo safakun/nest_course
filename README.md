@@ -83,6 +83,14 @@ Pipes = строку перевести в число. валидация вхо
 npm i class-validator class-transformer
 ``` 
 
+Создаем посты
+```bash
+nest generate module posts
+nest generate controller posts
+nest generate service posts
+
+```
+
 
 
 <p align="center">

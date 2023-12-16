@@ -2,6 +2,7 @@ import { Sequelize } from 'sequelize-typescript';
 import { User } from './users/users.model';
 import { Role } from './roles/roles.model';
 import { UserRoles } from './roles/user-roles.model';
+import { Post } from './posts/posts.model';
 //import { Cat } from '../cats/cat.entity';
 
 export const databaseProviders = [
@@ -15,7 +16,7 @@ export const databaseProviders = [
         username: process.env.POSTGRES_USER,
         password: process.env.POSTGRES_PASSWORD,
         database: process.env.POSTGRES_DB,
-        models: [User, Role, UserRoles],
+        models: [User, Role, UserRoles, Post],
       });
       
    //   sequelize.addModels([Cat]);
