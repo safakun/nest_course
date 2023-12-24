@@ -7,26 +7,28 @@
 
 ```javascript
 PORT=5000
-POSTGRES_HOST=localhost
-POSTGRES_USER=postgres 
+POSTGRES_HOST=postgres
+POSTGRES_USER=postgres
 POSTGRES_DB=postgres
-POSTGRES_PASSWORD=changeme
-POSTGRES_PORT=5432
-SECRET_KEY=random_secret_key123
+POSTGRESS_PASSWORD=root
+POSTGRESS_PORT=5432
+SECRET_KEY=secret_key_safasf
 ```
 
-Запустить базу данных
+Запустить проект
 ```bash
 docker compose up
 ```
-
-## Installation
-
+Остановить проект
 ```bash
-$ npm install
+docker compose down
 ```
 
-## Running the app
+Документация swagger
+```bash
+http://localhost:5000/api/docs
+```
+
 
 ```bash
 # development
